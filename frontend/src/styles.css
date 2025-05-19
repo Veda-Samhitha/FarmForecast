@@ -1,0 +1,68 @@
+/* Apply background image only to Index, Login, and Signup pages */
+.index-page, .login-page, .signup-page {
+    height: 100vh;
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+/* Container styling for Index, Login, and Signup pages */
+.index-container, .login-container, .signup-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Common styles for forms and buttons - scoped to specific pages */
+.index-page input, .index-page select, .index-page button,
+.login-page input, .login-page select, .login-page button,
+.signup-page input, .signup-page select, .signup-page button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles - scoped */
+.index-page button, .login-page button, .signup-page button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.index-page button:hover, .login-page button:hover, .signup-page button:hover {
+    background-color: #218838;
+}
+
+/* Error message style */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Server Error Message Styling */
+.server-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Logo style */
+.logo {
+    width: 100px;  
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}

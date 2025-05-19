@@ -1,0 +1,62 @@
+/* Navbar Styling */
+.about-navbar {
+    background-color: #1e3a56; /* Dark blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-right: 20px;
+}
+
+/* Ensure the page content starts below the navbar */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 20px 20px;
+}
+
+/* Navbar Links */
+.about-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+}
+
+/* Navbar Links Styling */
+.about-nav-links li {
+    display: inline;
+}
+
+.about-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.about-nav-links a:hover {
+    color: yellow; /* Changes to yellow on hover */
+}
+
+/* About Section Boxes */
+.about-box {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #1e3a56;
+    border-radius: 5px;
+}
+
+.about-container h1, .about-box h2 {
+    color: #1e3a56;
+}
